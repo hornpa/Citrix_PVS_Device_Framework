@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+
+	<Global>
+
+		<EventLogRedirection>D:\Static\Eventlogs</EventLogRedirection>
+		<PrintSpoolerRedirection>D:\Static\Spooler</PrintSpoolerRedirection>
+		<PageFileDestination>D</PageFileDestination><!-- Only Drive letters without a colon, example D -->
+		<PageFileSize>4192</PageFileSize>
+		<LastDriveLetter>h</LastDriveLetter>
+        <PVSServer>Z013SPWMK1CPVS1</PVSServer>
+        <PVSStiteName>Z013DPK1</PVSStiteName>
+        <PVSStoreName>PVS_Store</PVSStoreName>
+		<PVSStoreUNCPath>\\z013spwmk1cpvs1.z013dpk1.z013.intern\pvs_store$</PVSStoreUNCPath>
+        <PVSVHDFormat>vhdx</PVSVHDFormat><!-- vhd or vhdx -->
+		<ProgamInstallPathSAW>\\Z013DPK1.Z013.intern\NETLOGON\2-CTXSite\Installation\RS-SAW</ProgamInstallPathSAW><!-- Only in FI Env -->
+		<ProgamInstallPathSIA>\\Z013DPK1.Z013.intern\NETLOGON\2-CTXSite\Installation\RS-SIA</ProgamInstallPathSIA><!-- Only in FI Env -->
+		<ProgamInstallPath></ProgamInstallPath><!-- Default -->
+		<FontsPath>\\Z013DPK1.Z013.intern\NETLOGON\2-CTXSite\Fonts</FontsPath>
+	
+	</Global>
+
+	<Functions>
+
+		<!-- 0 = Disabled / 1 = Enabled -->
+		<MicrosoftEventlogRedirection>1</MicrosoftEventlogRedirection>
+        <MicrosoftSpoolerRedirection>1</MicrosoftSpoolerRedirection>
+        <MicrosoftChangeDriveLetter>1</MicrosoftChangeDriveLetter>
+        <MicrosoftPageFile>1</MicrosoftPageFile>
+        <MicrosoftNetworkAdapterCheckingSettings>1</MicrosoftNetworkAdapterCheckingSettings>
+        <MicrosoftNetworkAdapterRename>1</MicrosoftNetworkAdapterRename>
+        <MicrosoftCreateODBCConnections>0</MicrosoftCreateODBCConnections>
+		<MicrosoftFontsInstall>1</MicrosoftFontsInstall>
+		<MicrosoftRemovePrinters>1</MicrosoftRemovePrinters>
+        <InstallPrograms>1</InstallPrograms>
+        <CitrixPVSCreatevDisk>1</CitrixPVSCreatevDisk>
+        <CitrixPVSImportvDisk>0</CitrixPVSImportvDisk>
+        <BestPractice-W2K12>1</BestPractice-W2K12>   
+	
+	</Functions>
+
+	<Networks>
+	
+		<Network>
+			<Name>LAN-Prod</Name>
+			<IP>26.13.32.</IP>
+			<Type>none</Type>
+		</Network>
+
+		<Network>
+			<Name>LAN-PVS</Name>
+			<IP>10.1.0.</IP>		
+			<Type>PVS</Type>
+		</Network>
+
+	</Networks>
+
+	<ODBC>
+	<!--  Example
+		<Connection>
+			<Platform>32</Platform>
+			<DsnType>System</DsnType>
+			<Driver>SQL Server Native Client 11.0</Driver>
+			<Name>WIS32SpkHNdb</Name>
+			<Server>g026spwmk1sql02</Server>
+			<Database>WIS32SpkHNdb</Database>
+			<Description>wr Informationssysteme AG</Description>
+			<LastUser>wundr2</LastUser>
+			<AnsiNPW>No</AnsiNPW>
+			<Trusted_Connection>NO</Trusted_Connection>
+		</Connection>
+		
+		<Connection>
+			<Platform>32</Platform>
+			<DsnType>System</DsnType>
+			<Driver>SQL Server Native Client 11.0</Driver>
+			<Name>WIS32SpkHNsys</Name>
+			<Server>g026spwmk1sql02</Server>
+			<Database>WIS32SpkHNsys</Database>
+			<Description>wr Informationssysteme AG</Description>
+			<LastUser>wundr2</LastUser>
+			<AnsiNPW>No</AnsiNPW>
+			<Trusted_Connection>NO</Trusted_Connection>
+		</Connection>
+	-->
+	</ODBC>	
+	
+	<PrinterRemove>
+
+		<PrinterName>Microsoft XPS Document Writer</PrinterName>
+		<PrinterName>CCS Fax</PrinterName>
+		<PrinterName>An OneNote 2010 senden</PrinterName>
+
+	</PrinterRemove>	
+	
+</Settings>
