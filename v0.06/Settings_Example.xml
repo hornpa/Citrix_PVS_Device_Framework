@@ -6,17 +6,17 @@
 		<EventLogRedirection>D:\Static\Eventlogs</EventLogRedirection>
 		<PrintSpoolerRedirection>D:\Static\Spooler</PrintSpoolerRedirection>
 		<PageFileDestination>D</PageFileDestination><!-- Only Drive letters without a colon, example D -->
-		<PageFileSize>4192</PageFileSize>
+		<PageFileSize>4096</PageFileSize>
 		<LastDriveLetter>h</LastDriveLetter>
-        <PVSServer>Z013SPWMK1CPVS1</PVSServer>
-        <PVSStiteName>Z013DPK1</PVSStiteName>
-        <PVSStoreName>PVS_Store</PVSStoreName>
-		<PVSStoreUNCPath>\\z013spwmk1cpvs1.z013dpk1.z013.intern\pvs_store$</PVSStoreUNCPath>
-        <PVSVHDFormat>vhdx</PVSVHDFormat><!-- vhd or vhdx -->
-		<ProgamInstallPathSAW>\\Z013DPK1.Z013.intern\NETLOGON\2-CTXSite\Installation\RS-SAW</ProgamInstallPathSAW><!-- Only in FI Env -->
-		<ProgamInstallPathSIA>\\Z013DPK1.Z013.intern\NETLOGON\2-CTXSite\Installation\RS-SIA</ProgamInstallPathSIA><!-- Only in FI Env -->
+        <PVSServer></PVSServer>
+        <PVSStiteName></PVSStiteName>
+        <PVSStoreName></PVSStoreName>
+		<PVSStoreUNCPath>\\test.intra\Source\Stores\PVS</PVSStoreUNCPath>
+        <PVSVHDFormat>vhd</PVSVHDFormat><!-- vhd or vhdx -->
+		<ProgamInstallPathSAW></ProgamInstallPathSAW><!-- Only in FI Env -->
+		<ProgamInstallPathSIA></ProgamInstallPathSIA><!-- Only in FI Env -->
 		<ProgamInstallPath></ProgamInstallPath><!-- Default -->
-		<FontsPath>\\Z013DPK1.Z013.intern\NETLOGON\2-CTXSite\Fonts</FontsPath>
+		<FontsPath></FontsPath>
 	
 	</Global>
 
@@ -25,14 +25,14 @@
 		<!-- 0 = Disabled / 1 = Enabled -->
 		<MicrosoftEventlogRedirection>1</MicrosoftEventlogRedirection>
         <MicrosoftSpoolerRedirection>1</MicrosoftSpoolerRedirection>
-        <MicrosoftChangeDriveLetter>1</MicrosoftChangeDriveLetter>
+        <MicrosoftChangeDriveLetter>0</MicrosoftChangeDriveLetter>
         <MicrosoftPageFile>1</MicrosoftPageFile>
-        <MicrosoftNetworkAdapterCheckingSettings>1</MicrosoftNetworkAdapterCheckingSettings>
+        <MicrosoftNetworkAdapterCheckingSettings>0</MicrosoftNetworkAdapterCheckingSettings>
         <MicrosoftNetworkAdapterRename>1</MicrosoftNetworkAdapterRename>
         <MicrosoftCreateODBCConnections>0</MicrosoftCreateODBCConnections>
-		<MicrosoftFontsInstall>1</MicrosoftFontsInstall>
-		<MicrosoftRemovePrinters>1</MicrosoftRemovePrinters>
-        <InstallPrograms>1</InstallPrograms>
+		<MicrosoftFontsInstall>0</MicrosoftFontsInstall>
+		<MicrosoftRemovePrinters>0</MicrosoftRemovePrinters>
+        <InstallPrograms>0</InstallPrograms>
         <CitrixPVSCreatevDisk>1</CitrixPVSCreatevDisk>
         <CitrixPVSImportvDisk>0</CitrixPVSImportvDisk>
         <BestPractice-W2K12>1</BestPractice-W2K12>   
@@ -43,13 +43,13 @@
 	
 		<Network>
 			<Name>LAN-Prod</Name>
-			<IP>26.13.32.</IP>
+			<IP>192.168.10.</IP>
 			<Type>none</Type>
 		</Network>
 
 		<Network>
 			<Name>LAN-PVS</Name>
-			<IP>10.1.0.</IP>		
+			<IP>192.168.99.</IP>		
 			<Type>PVS</Type>
 		</Network>
 
@@ -86,11 +86,11 @@
 	</ODBC>	
 	
 	<PrinterRemove>
-
+	<!--  Example
 		<PrinterName>Microsoft XPS Document Writer</PrinterName>
 		<PrinterName>CCS Fax</PrinterName>
 		<PrinterName>An OneNote 2010 senden</PrinterName>
-
+	-->
 	</PrinterRemove>	
 	
 </Settings>
